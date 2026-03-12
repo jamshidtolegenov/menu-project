@@ -1,0 +1,399 @@
+/* ===========================
+   Детальная страница блюда
+=========================== */
+.dish-detail-page {
+  padding: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.back-btn:hover {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+.dish-detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid #e8e8e8;
+}
+
+/* Изображение */
+.dish-image-section {
+  position: relative;
+}
+
+.dish-detail-image {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.image-thumbnails {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.thumb-img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  transition: border-color 0.2s;
+}
+
+.thumb-img:hover {
+  border-color: #ff6b6b;
+}
+
+/* Информация */
+.dish-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dish-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-category-badge {
+  background-color: #fff0f0;
+  color: #ff6b6b;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.detail-favorite-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s;
+}
+
+.detail-favorite-btn:hover,
+.detail-favorite-btn.active {
+  border-color: #ff6b6b;
+  background-color: #fff0f0;
+}
+
+.dish-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.dish-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.dish-brand {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}
+
+/* Метаданные */
+.dish-meta {
+  display: flex;
+  gap: 16px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  flex: 1;
+  border: 1px solid #efefef;
+}
+
+.meta-label {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.meta-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1a1a2e;
+}
+
+.price-value {
+  color: #ff6b6b;
+}
+
+.rating-value {
+  color: #ffa000;
+}
+
+/* Ингредиенты */
+.ingredients-section {
+  background-color: #fff8f0;
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 4px solid #ff6b6b;
+}
+
+.section-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 12px 0;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ingredient-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+.ingredient-bullet {
+  color: #ff6b6b;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Описание */
+.description-section {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+}
+
+.dish-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+/* Теги */
+.tags-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-chip {
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: lowercase;
+}
+
+/* Цена и скидка */
+.price-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.discount-badge {
+  background-color: #ff6b6b;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 8px;
+}
+
+/* Наличие */
+.stock-value.in-stock { color: #4caf50; }
+.stock-value.out-stock { color: #f44336; }
+
+/* Кнопки действий */
+.detail-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.add-to-cart-header-btn {
+  flex: 1;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff6b6b;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 150px;
+  transition: background-color 0.2s;
+}
+
+.add-to-cart-header-btn:hover:not(:disabled) {
+  background-color: #e55a5a;
+}
+
+.add-to-cart-header-btn.added {
+  background-color: #4caf50;
+}
+
+.add-to-cart-header-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.go-cart-btn {
+  padding: 14px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fff;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.go-cart-btn:hover {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+/* Не найдено */
+.not-found {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.not-found p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 24px 0;
+}
+
+.not-found button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6b6b;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* Загрузка */
+.detail-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  gap: 16px;
+}
+
+.detail-loading .spinner {
+  width: 44px;
+  height: 44px;
+  border: 4px solid #e0e0e0;
+  border-top-color: #ff6b6b;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.detail-loading p {
+  font-size: 14px;
+  color: #aaa;
+  margin: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Адаптивность */
+@media (max-width: 968px) {
+  .dish-detail-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .dish-title {
+    font-size: 28px;
+  }
+
+  .dish-header {
+    flex-direction: column;
+  }
+
+  .add-to-cart-header-btn {
+    width: 100%;
+  }
+
+  .dish-detail-image {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dish-detail-page {
+    padding: 16px;
+  }
+
+  .dish-meta {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

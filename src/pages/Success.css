@@ -1,0 +1,271 @@
+/* ===========================
+   Страница успешного заказа
+=========================== */
+.success-page {
+  padding: 32px;
+  max-width: 640px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.success-container {
+  width: 100%;
+}
+
+/* Иконка успеха */
+.checkmark-ring {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.checkmark-ring .checkmark {
+  font-size: 40px;
+  color: #fff;
+  line-height: 1;
+}
+
+.success-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.success-message {
+  font-size: 14px;
+  color: #888;
+  margin: 0 0 20px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Состав заказа */
+.order-summary-block {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 0 0 14px;
+  border: 1px solid #e8e8e8;
+  text-align: left;
+}
+
+.order-summary-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 12px;
+}
+
+.order-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.order-item-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-item-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.order-item-details {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.order-item-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.order-item-qty {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.order-item-total {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ff6b6b;
+  white-space: nowrap;
+}
+
+/* Итоги */
+.order-totals {
+  border-top: 1px dashed #e8e8e8;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.order-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #888;
+}
+
+.discount-line {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.final-line {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-top: 2px;
+}
+
+/* Статус Telegram */
+.telegram-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 14px;
+  border: 1px solid transparent;
+}
+
+.tg-sending {
+  background-color: #fff8e1;
+  color: #f57c00;
+  border-color: #ffe082;
+}
+
+.tg-sent {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-color: #a5d6a7;
+}
+
+.tg-error {
+  background-color: #fff3e0;
+  color: #e65100;
+  border-color: #ffcc80;
+}
+
+.tg-error code {
+  background: rgba(0,0,0,0.07);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.tg-spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Карточки доставки */
+.success-details {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.detail-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #e8e8e8;
+}
+
+.detail-icon {
+  font-size: 26px;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
+}
+
+.detail-label {
+  font-size: 11px;
+  color: #bbb;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+/* Кнопка нового заказа */
+.new-order-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff6b6b;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s;
+}
+
+.new-order-btn:hover {
+  background-color: #e55a5a;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .success-page {
+    padding: 20px 14px 32px;
+  }
+
+  .success-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .success-details {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,70 @@
+/* ===========================
+   Глобальные стили
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f5f5;
+  color: #1a1a2e;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 240px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content:has(.menu-page) {
+  overflow: hidden;
+}
+
+/* Общий заголовок страниц */
+.page-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0 0 24px 0;
+}
+
+/* Кнопки */
+button {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+/* Фокус */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #ff6b6b;
+  outline-offset: 2px;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 0;
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 28px;
+  }
+}
