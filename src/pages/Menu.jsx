@@ -127,7 +127,7 @@ const Menu = () => {
           </div>
 
           {/* Фильтр по категории */}
-          <div className="sort-wrapper">
+          {/* <div className="sort-wrapper">
             <select
               className="sort-select"
               value={selectedCategory}
@@ -139,7 +139,7 @@ const Menu = () => {
               ))}
             </select>
             <span className="dropdown-arrow">▼</span>
-          </div>
+          </div> */}
 
           {/* Сортировка */}
           <div className="sort-wrapper sort-wrapper--highlight">
