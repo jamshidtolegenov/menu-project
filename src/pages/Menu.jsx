@@ -3,7 +3,7 @@ import ProductCard from '../components/ProductCard.jsx';
 import Pagination from '../components/Pagination.jsx';
 import './Menu.css';
 
-const LIMIT = 10;
+const LIMIT = 20;
 
 const SORT_OPTIONS = [
   { value: 'default',    label: 'Сортировать по' },
