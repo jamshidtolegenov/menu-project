@@ -369,6 +369,8 @@
 @media (max-width: 768px) {
   .dish-detail-page {
     padding: 16px;
+    overflow-y: auto;
+    height: 550px;
   }
 
   .dish-meta {
