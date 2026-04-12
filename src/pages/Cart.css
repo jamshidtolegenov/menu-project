@@ -276,8 +276,9 @@
 @media (max-width: 768px) {
   .cart-page {
     padding: 16px;
-    overflow-y: auto;
-    height: 550px;
+    /* overflow-y: auto;
+    height: 550px; */
+    margin-bottom: 50px;
   }
 
   .cart-item {
